@@ -12,13 +12,10 @@ console.log(removeEWords('Enter the building')); // 'building'
 
 */
 
-let removeEWords = function(sentence) {
-  let newSentence= []
+let removeEWords = function (sentence) {
   let words = sentence.split(" ")
-
-  newSentence.push(words.filter(word =>{
-    if(word.toLowercase().includes(e))
-  }))
+  let newSentence = words.filter(word => !word.toLowerCase().includes("e"))
+  return newSentence.join(" ")
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
