@@ -10,5 +10,3 @@ describe('repeatingTranslate()', function () {
     assert.equal(repeatingTranslate("her family flew to France"),  "herer familyily flewew to FranceFrance");
   });
 });
-
-
