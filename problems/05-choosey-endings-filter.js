@@ -26,6 +26,9 @@ console.log(chooseyEndings(17, 'ily'));
 */
 
 let chooseyEndings = function(words, suffix) {
+   if(!Array.isArray(word)){
+    return []
+   }
 
   return words.filter(word => word.endsWith(suffix))
 
